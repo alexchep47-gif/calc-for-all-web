@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calc For All — La suite mathématique complète</title>
+  <meta name="description" content="Calc For All : calculatrice scientifique, étude de fonction, matrices, probabilités, statistiques et bien plus. 100 % hors ligne." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">Calc <span>For All</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Fonctionnalités</a></li>
+        <li><a href="#modules">Modules</a></li>
+        <li><a href="#download">Télécharger</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="badge">100 % hors ligne • Français</div>
+        <h1>La suite mathématique<br /><span>tout-en-un</span></h1>
+        <p class="hero-sub">
+          Calculatrice scientifique, étude de fonction, matrices, probabilités,
+          statistiques, géométrie, suites… et bien plus. Conçue pour les élèves et étudiants.
+        </p>
+        <div class="hero-cta">
+          <a href="#download" class="btn btn-primary">Télécharger l’APK</a>
+          <a href="#modules" class="btn btn-ghost">Voir les modules</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="app-header">Calc For All</div>
+            <div class="app-modules">
+              <div class="mini-card" style="--c:#1565C0">Calculatrice</div>
+              <div class="mini-card" style="--c:#2E7D32">Étude de fonction</div>
+              <div class="mini-card" style="--c:#6A1B9A">Solveur</div>
+              <div class="mini-card" style="--c:#00838F">Cercle trigo</div>
+              <div class="mini-card" style="--c:#EF6C00">Statistiques</div>
+              <div class="mini-card" style="--c:#C62828">Exercices</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2 class="section-title">Pourquoi Calc For All ?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📴</div>
+          <h3>100 % hors ligne</h3>
+          <p>Fonctionne sans internet. Idéal en classe, en déplacement ou en zone à faible connexion.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🇫🇷</div>
+          <h3>Entièrement en français</h3>
+          <p>Interface et explications en français, adaptées aux programmes francophones.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h3>Explications pas-à-pas</h3>
+          <p>Chaque résultat est accompagné d’explications claires, comme un professeur.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧩</div>
+          <h3>14 modules en un</h3>
+          <p>Plus besoin de 10 applications différentes. Tout est réuni au même endroit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modules -->
+  <section id="modules" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Tous les modules</h2>
+      <p class="section-sub">Clique sur un module pour voir le détail</p>
+      <div class="modules-grid" id="modulesGrid">
+        <!-- Rempli par JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section id="download" class="section">
+    <div class="container download-box">
+      <h2>Télécharger Calc For All</h2>
+      <p>Application Android (APK). Compilation via GitHub Actions.</p>
+      <div class="download-actions">
+        <a href="https://github.com/alexchep47-gif/calc-for-all" target="_blank" class="btn btn-primary">
+          Voir le projet GitHub
+        </a>
+        <a href="https://github.com/alexchep47-gif/calc-for-all/actions" target="_blank" class="btn btn-ghost">
+          Télécharger l’APK (Actions)
+        </a>
+      </div>
+      <ol class="download-steps">
+        <li>Ouvre le dépôt GitHub de l’application</li>
+        <li>Va dans l’onglet <strong>Actions</strong></li>
+        <li>Lance le workflow <strong>Build APK</strong></li>
+        <li>Télécharge l’artefact une fois le build terminé</li>
+        <li>Installe l’APK sur ton téléphone Android</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Questions fréquentes</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>L’application est-elle gratuite ?</summary>
+          <p>Oui, le projet est open-source et gratuit.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Faut-il internet pour l’utiliser ?</summary>
+          <p>Non. Une fois installée, l’application fonctionne entièrement hors ligne.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Y a-t-il une version iOS ?</summary>
+          <p>Pour le moment seule la version Android (APK) est disponible. Une version iOS nécessite un compte développeur Apple.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Comment obtenir les mises à jour ?</summary>
+          <p>Relance simplement le workflow GitHub Actions pour générer un nouvel APK avec les dernières fonctionnalités.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Calc For All — Conçu pour les élèves et étudiants</p>
+      <p class="footer-links">
+        <a href="https://github.com/alexchep47-gif/calc-for-all" target="_blank">Application</a>
+        ·
+        <a href="https://github.com/alexchep47-gif/calc-for-all-web" target="_blank">Site web</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal module -->
+  <div class="modal" id="moduleModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
