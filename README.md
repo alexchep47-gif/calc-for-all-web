@@ -14,7 +14,7 @@ Site de présentation interactif de l’application **Calc For All**.
 
 Le bouton **Essayer la version Web** ouvre l’application Flutter complète :
 
-https://alexchep47-gif.github.io/calc-for-all/
+https://calc-for-all-web.vercel.app/app/
 
 ## Déploiement
 
