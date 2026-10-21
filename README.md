@@ -7,7 +7,14 @@ Site de présentation interactif de l’application **Calc For All**.
 - Page d’accueil moderne et responsive
 - Présentation des 14 modules
 - Section téléchargement (lien vers GitHub Actions)
+- Accès direct à la version Flutter Web
 - FAQ
+
+## Version Web de l’application
+
+Le bouton **Essayer la version Web** ouvre l’application Flutter complète :
+
+https://alexchep47-gif.github.io/calc-for-all/
 
 ## Déploiement
 
