@@ -83,6 +83,11 @@ jobs:
               exit 0
             fi
             echo "The site branch changed during the build; rebasing before retry $attempt."
-            git pull --rebase origin main
+            if ! git pull --rebase origin main; then
+              # Les fichiers générés sont volontairement remplacés par ce build.
+              git checkout --theirs app .calc-for-all-source-sha
+              git add app .calc-for-all-source-sha
+              GIT_EDITOR=true git rebase --continue
+            fi
           done
           exit 1
