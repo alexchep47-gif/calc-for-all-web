@@ -16,6 +16,10 @@ Le bouton **Essayer la version Web** ouvre l’application Flutter complète :
 
 https://calc-for-all-web.vercel.app/app/
 
+## Synchronisation automatique
+
+Le workflow GitHub Actions `Sync latest Flutter app to Vercel` vérifie toutes les cinq minutes la branche `main` du dépôt `calc-for-all`. Lorsqu'un nouveau commit est détecté, il reconstruit automatiquement Flutter Web avec le renderer HTML, remplace le dossier `app/`, puis pousse la mise à jour. Vercel déploie alors automatiquement la dernière version sous `/app/`.
+
 ## Déploiement
 
 Tu peux déployer ce site gratuitement sur :

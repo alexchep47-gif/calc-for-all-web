@@ -1,0 +1,81 @@
+name: Sync latest Flutter app to Vercel
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-flutter-app
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Vercel site repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout latest Flutter app
+        uses: actions/checkout@v4
+        with:
+          repository: alexchep47-gif/calc-for-all
+          ref: main
+          path: calc-for-all-source
+          fetch-depth: 1
+
+      - name: Detect a new Flutter commit
+        id: source
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha="$(git -C calc-for-all-source rev-parse HEAD)"
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          if [[ -f .calc-for-all-source-sha ]] && [[ "$(cat .calc-for-all-source-sha)" == "$sha" ]]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "The deployed app already matches $sha."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "A new Flutter commit needs deployment: $sha"
+          fi
+
+      - name: Setup Flutter
+        if: steps.source.outputs.changed == 'true'
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.0'
+          channel: stable
+          cache: true
+
+      - name: Build Flutter Web for Vercel
+        if: steps.source.outputs.changed == 'true'
+        working-directory: calc-for-all-source
+        run: |
+          flutter pub get
+          flutter build web --release --web-renderer html --pwa-strategy none --base-href /app/
+
+      - name: Replace the Vercel app bundle
+        if: steps.source.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf app
+          mkdir -p app
+          cp -a calc-for-all-source/build/web/. app/
+          printf '%s\n' '${{ steps.source.outputs.sha }}' > .calc-for-all-source-sha
+
+      - name: Commit and push the new app bundle
+        if: steps.source.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add app .calc-for-all-source-sha
+          git commit -m "Sync Flutter app ${{ steps.source.outputs.sha }}"
+          git push
