@@ -1,0 +1,4 @@
+Expected Flutter app version: 2.8.1+5 (MathLibrary: cos(pi), sinh/cosh/tanh, etc.)
+Deploy path: calc-for-all → build web → push to this repo under /app/
+Requires secret GH_PAT on alexchep47-gif/calc-for-all (repo scope on calc-for-all-web).
+Meanwhile latest build is also on GitHub Pages: https://alexchep47-gif.github.io/calc-for-all/
