@@ -78,4 +78,11 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add app .calc-for-all-source-sha
           git commit -m "Sync Flutter app ${{ steps.source.outputs.sha }}"
-          git push
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "The site branch changed during the build; rebasing before retry $attempt."
+            git pull --rebase origin main
+          done
+          exit 1
