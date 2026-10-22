@@ -1,11 +1,20 @@
 {
+  "cleanUrls": false,
+  "trailingSlash": true,
   "rewrites": [
+    { "source": "/", "destination": "/app/index.html" },
     { "source": "/app", "destination": "/app/index.html" },
-    { "source": "/app/(.*)", "destination": "/app/index.html" }
+    { "source": "/app/", "destination": "/app/index.html" }
   ],
   "headers": [
     {
-      "source": "/app/(.*)",
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/app/main.dart.js",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
