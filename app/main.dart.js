@@ -47743,7 +47743,7 @@ if(p.w==="deriv\xe9e")m.push(A.e8(p.e,A.dn(o,new A.cd(4,A.b9(14),B.aQ),o,o,o,o,o
 else{s=A.a([A.aQM(B.aU,new A.auY(p),o,B.baZ,B.ba1,p.Q)],l)
 if(p.Q)s.push(A.dJ(A.a([A.cb(A.e8(p.f,A.dn(o,new A.cd(4,A.b9(14),B.aQ),o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,"a (borne inf)",o,o,o,o,o,o,o,o,o,o,o,o,o),B.h0,1,o,o,B.ao),1,o),B.LA,A.cb(A.e8(p.r,A.dn(o,new A.cd(4,A.b9(14),B.aQ),o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,"b (borne sup)",o,o,o,o,o,o,o,o,o,o,o,o,o),B.h0,1,o,o,B.ao),1,o)],l),B.ad,B.a6,B.aa))
 m.push(A.cy(s,B.ad,B.a6,B.aa))}m.push(B.b8)
-m.push(A.Hn(A.a([p.wl("a\u2044b","(a)/(b)"),p.wl("\u221a","sqrt()"),p.wl("\u207f\u221a","root(n, )"),p.wl("x\u207f","x^n"),p.wl("\u222b","\u222b()dx")],l),8,8))
+m.push(A.Hn(A.a([p.wl("a\u2044b","(a)/(b)"),p.wl("\u221a","sqrt()"),p.wl("\u207f\u221a","x^(1/n)"),p.wl("x\u207f","x^n"),p.wl("\u222b","\u222b()dx")],l),8,8))
 m.push(B.bP)
 s=A.mg(B.eR,new A.bn(A.b9(14),B.L))
 m.push(A.mf(A.au(p.w==="deriv\xe9e"?"Calculer la d\xe9riv\xe9e":"Calculer l\u2019int\xe9grale",o,o,o,o,o,o,o),p.gae7(),s))
