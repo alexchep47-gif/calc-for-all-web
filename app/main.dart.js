@@ -49569,7 +49569,7 @@ return this.a.d=s.gad(s)},
 $S:0}
 A.yp.prototype={
 J(a){var s=null,r=A.tC(a,!0,t.eC),q=A.eE(s,s,!0,s,s,1,s,s,s,!1,s,!1,s,s,s,s,!0,s,s,s,s,s,B.baK,s,s,s,1,s),p=A.l7(!1,s,s,s,!0,s,s,!1,B.VY,s,s,new A.aoh(a,r),!1,s,s,s,A.au(r.b?"OLED noir":this.ard(r.a),s,s,s,s,s,s,s),s,B.bbb,s,s),o=A.aQI(s,new A.aoi(r),B.Wd,B.baJ,B.ban,r.b),n=r.c,m=""+B.m.a3(n*100)+" %"
-return A.eM(q,A.hg(A.a([B.cm,p,o,B.jl,A.l7(!1,s,s,s,!0,s,s,!1,B.W0,s,s,s,!1,s,s,s,A.au(m,s,s,s,s,s,s,s),s,B.baV,s,s),new A.at(B.hB,A.aoH(10,m,1.35,0.85,new A.aoj(r),n),s),B.jl,A.l7(!1,s,s,s,!0,s,s,!1,B.Wb,s,s,new A.aok(a),!1,s,s,s,A.au("Calc For All v2.7.0",s,s,s,s,s,s,s),s,B.baU,s,s)],t.D),s,s,B.au,!1),s)},
+return A.eM(q,A.hg(A.a([B.cm,p,o,B.jl,A.l7(!1,s,s,s,!0,s,s,!1,B.W0,s,s,s,!1,s,s,s,A.au(m,s,s,s,s,s,s,s),s,B.baV,s,s),new A.at(B.hB,A.aoH(10,m,1.35,0.85,new A.aoj(r),n),s),B.jl,A.l7(!1,s,s,s,!0,s,s,!1,B.Wb,s,s,new A.aok(a),!1,s,s,s,A.au("Calc For All v3.1.0",s,s,s,s,s,s,s),s,B.baU,s,s)],t.D),s,s,B.au,!1),s)},
 ard(a){switch(a.a){case 1:return"Clair"
 case 2:return"Sombre"
 case 0:return"Systeme"}}}
@@ -49614,7 +49614,7 @@ $1(a){return this.a.v1(a)},
 $S:30}
 A.aok.prototype={
 $0(){var s=null
-A.b9X("\xa9 2026 \u2014 Calc For All","Calc For All","2.7.0",A.a([B.cu,A.au("Calculatrice scientifique avancee avec graphiques, nombres complexes et etude de fonction.",s,s,s,s,s,s,s)],t.D),this.a)},
+A.b9X("\xa9 2026 \u2014 Calc For All","Calc For All","3.1.0",A.a([B.cu,A.au("Calculatrice scientifique avancee avec graphiques, nombres complexes et etude de fonction.",s,s,s,s,s,s,s)],t.D),this.a)},
 $S:0}
 A.u6.prototype={
 ak(){return new A.KQ(A.a([],t.PF))}}
