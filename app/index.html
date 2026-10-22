@@ -33,6 +33,30 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <div id="calc-loading" style="font-family:system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;color:#1565C0">
+    Chargement de Calc For All…
+  </div>
+  <script>
+    // Nettoie une ancienne version Flutter PWA qui pourrait bloquer le bundle.
+    (async function () {
+      try {
+        if ('serviceWorker' in navigator) {
+          const registrations = await navigator.serviceWorker.getRegistrations();
+          await Promise.all(registrations.map(function (registration) {
+            return registration.unregister();
+          }));
+        }
+        if ('caches' in window) {
+          const cacheNames = await caches.keys();
+          await Promise.all(cacheNames.map(function (name) {
+            return caches.delete(name);
+          }));
+        }
+      } catch (_) {
+        // Les navigateurs qui ne permettent pas ce nettoyage continuent normalement.
+      }
+    })();
+  </script>
   <!--
     You can customize the "flutter_bootstrap.js" script.
     This is useful to provide a custom configuration to the Flutter loader
@@ -42,5 +66,11 @@
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
   <script src="flutter_bootstrap.js" async></script>
+  <script>
+    window.setTimeout(function () {
+      var loading = document.getElementById('calc-loading');
+      if (loading) loading.remove();
+    }, 8000);
+  </script>
 </body>
 </html>
