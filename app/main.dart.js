@@ -50948,7 +50948,7 @@ s=A.a5(n?"Taille du texte":"Font size",q,q,q,q,q,q,q)
 r=p.c
 s=A.oW(!1,q,q,q,!0,q,q,!1,B.a2r,q,q,q,!1,q,q,q,A.aPZ(10,""+B.m.aa(r*100)+" %",1.35,0.85,new A.au5(p),r),q,s,q,q)
 r=A.a5(n?"\xc0 propos / Licences":"About / Licenses",q,q,q,q,q,q,q)
-return A.fe(m,A.fK(A.a([k,l,s,B.pq,A.oW(!1,q,q,q,!0,q,q,!1,B.a2u,q,q,new A.au6(a,n),!1,q,q,q,A.a5("Calc For All v3.5.1",q,q,q,q,q,q,q),q,r,q,q)],t.D),q,q,B.aA,!1))},
+return A.fe(m,A.fK(A.a([k,l,s,B.pq,A.oW(!1,q,q,q,!0,q,q,!1,B.a2u,q,q,new A.au6(a,n),!1,q,q,q,A.a5("Calc For All v3.5.2",q,q,q,q,q,q,q),q,r,q,q)],t.D),q,q,B.aA,!1))},
 Y2(a,b){switch(a.a){case 1:return b?"Clair":"Light"
 case 2:return b?"Sombre":"Dark"
 case 0:return b?"Syst\xe8me":"System"}}}
@@ -50980,7 +50980,7 @@ A.au6.prototype={
 $0(){A.aRD(new A.au1(this.b),this.a,t.z)},
 $S:0}
 A.au1.prototype={
-$1(a){var s=null,r=A.a5("Calc For All",s,s,s,s,s,s,s),q=A.a5("Version 3.5.1",s,s,s,s,A.eZ(s,s,B.dT,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),p=A.a5("Calculatrice scientifique avanc\xe9e avec graphiques, nombres complexes et \xe9tude de fonction.",s,s,s,s,s,s,s),o=this.a,n=A.a5(o?"Cr\xe9ateur":"Creator",s,s,s,s,B.bv,s,s),m=A.a5(o?"Nationalit\xe9 : camerounaise":"Nationality: Cameroonian",s,s,s,s,s,s,s),l=t.D
+$1(a){var s=null,r=A.a5("Calc For All",s,s,s,s,s,s,s),q=A.a5("Version 3.5.2",s,s,s,s,A.eZ(s,s,B.dT,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),p=A.a5("Calculatrice scientifique avanc\xe9e avec graphiques, nombres complexes et \xe9tude de fonction.",s,s,s,s,s,s,s),o=this.a,n=A.a5(o?"Cr\xe9ateur":"Creator",s,s,s,s,B.bv,s,s),m=A.a5(o?"Nationalit\xe9 : camerounaise":"Nationality: Cameroonian",s,s,s,s,s,s,s),l=t.D
 m=A.XQ(A.cN(A.a([q,B.aJ,p,B.cF,n,B.tk,B.br5,m,B.cF,B.bqU,B.bI,A.a5(o?"Application \xe9ducative hors ligne. Aucune publicit\xe9.":"Offline educational app. No ads.",s,s,s,s,B.Tf,s,s)],l),B.bX,B.a3,B.bR),s,B.aV,s,s,!1,B.aA)
 return A.aNQ(A.a([A.lH(!1,A.a5(o?"Fermer":"Close",s,s,s,s,s,s,s),s,s,B.be,s,s,s,s,new A.atZ(a),s,s)],l),m,r)},
 $S:111}
