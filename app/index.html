@@ -19,6 +19,8 @@
 
   <title>Calc For All 3.1.0</title>
   <link rel="manifest" href="manifest.json">
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <script src="tesseract_ocr.js"></script>
 </head>
 <body>
   <div id="calc-loading" style="font-family:system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;color:#1565C0">
@@ -43,7 +45,7 @@
       } catch (_) {}
     })();
   </script>
-  <script src="flutter_bootstrap.js?v=7bbbe5bbb506f8294a8da80df2ba3fbb2984aa6c" async></script>
+  <script src="flutter_bootstrap.js?v=b904545e3189b917e1a4de37fa8cc74e5a744571" async></script>
   <script>
     window.setTimeout(function () {
       var loading = document.getElementById('calc-loading');
